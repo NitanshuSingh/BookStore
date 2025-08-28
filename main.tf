@@ -15,8 +15,3 @@ resource "azurerm_storage_container" "blob" {
   name               = "devblob"
   storage_account_id = azurerm_storage_account.strg.id
 }
-
-resource "azurerm_resource_group" "rg1" {
-  name     = "ShruBookStore"
-  location = "centralindia"
-}
