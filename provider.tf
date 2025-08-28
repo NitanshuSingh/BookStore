@@ -5,12 +5,6 @@ terraform {
       version = "4.40.0"
     }
   }
-  backend "azurerm" {
-    resource_group_name = "dev-rg"
-    storage_account_name = "shrustrg"
-    container_name = "devblob"
-    key = "dev.terraform.tfstate"
-  }
 }
 
 provider "azurerm" {
